@@ -1,22 +1,22 @@
 <template>
   <div>
     <div
-      class="flex items-center justify-between bg-white px-4 py-2 text-gray-900 md:hidden"
+      class="flex items-center justify-between px-4 py-2 text-gray-900 bg-white md:hidden"
     >
       <!-- logo -->
       <NuxtLink
         to="/"
-        class="rounded-2xl bg-gray-300 px-4 py-2 uppercase text-white"
+        class="px-4 py-2 text-white uppercase bg-gray-300 rounded-2xl"
         >logo</NuxtLink
       >
 
       <!-- mobile menu button -->
       <button
-        class="mobile-menu-button p-4 focus:bg-gray-200 focus:outline-none"
+        class="p-4 mobile-menu-button focus:bg-gray-200 focus:outline-none"
         @click="toggle"
       >
         <svg
-          class="h-5 w-5"
+          class="w-5 h-5"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -33,13 +33,13 @@
 
     <!-- sidebar -->
     <div
-      class="sidebar absolute inset-y-0 left-0 z-30 w-64 space-y-6 bg-white bg-opacity-70 px-2 py-6 text-gray-700 transition duration-200 ease-in-out md:relative md:translate-x-0"
-      :class="isOpen ? '-translate-x-full' : ''"
+      class="absolute inset-y-0 left-0 z-30 w-64 px-2 py-6 space-y-6 text-gray-700 transition duration-200 ease-in-out bg-white sidebar bg-opacity-70 md:relative md:translate-x-0"
+      :class="isOpen ? '' : '-translate-x-full'"
     >
       <!-- logo -->
       <NuxtLink
         to="/"
-        class="mx-2 rounded-2xl bg-gray-300 px-4 py-2 uppercase text-white"
+        class="mx-2 rounded-2xl bg-gray-300 px-4 py-2.5 uppercase text-white"
         >logo</NuxtLink
       >
 
@@ -57,13 +57,31 @@
         >
           About Me
         </NuxtLink>
-        <NuxtLink
-          to=""
+        <a
+          href="/CV_Julieta_Mercerat_FR.pdf"
+          target="_blank"
           class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
         >
-          CV
-        </NuxtLink>
+          CV FR
+        </a>
+        <a
+          href="/CV_Julieta_Mercerat_ESP.pdf"
+          target="_blank"
+          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
+        >
+          CV ES
+        </a>
       </nav>
+
+      <div class="pt-16">
+        <h3 class="px-4 my-3 font-semibold">Categories</h3>
+        <ul class="space-y-2 px-4 py-2.5">
+          <li class="">#Fashion Design</li>
+          <li>#Textile Design</li>
+          <li>#Sustainability</li>
+          <li>#Trend Reports</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>

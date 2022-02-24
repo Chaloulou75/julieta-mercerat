@@ -33,7 +33,7 @@
 
     <!-- sidebar -->
     <div
-      class="absolute inset-y-0 left-0 z-30 w-64 px-2 py-6 space-y-6 text-gray-700 transition duration-200 ease-in-out bg-white sidebar bg-opacity-70 md:relative md:translate-x-0"
+      class="absolute inset-y-0 left-0 z-30 w-64 px-2 py-6 space-y-6 text-gray-700 transition duration-200 ease-in-out bg-white sidebar bg-opacity-90 md:relative md:translate-x-0"
       :class="isOpen ? '' : '-translate-x-full'"
     >
       <!-- logo -->

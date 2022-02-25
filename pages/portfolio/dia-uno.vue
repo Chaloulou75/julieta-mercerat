@@ -12,7 +12,7 @@
             class="mx-auto shadow-lg shadow-sky-800/60"
           />
         </div>
-        <div class="w-full mb-12">
+        <div class="w-full px-4 mb-12 md:px-0">
           <h2 class="my-4 font-semibold">Name of the project</h2>
           <p class="mb-4">
             Descipción de trabajo, explicacion y areas en las que se desarrollo.

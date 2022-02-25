@@ -3,31 +3,39 @@
     <div class="relative min-h-full bg-white font-montserrat md:flex">
       <NavigationComponent />
       <div
-        class="container relative flex flex-col items-center justify-between flex-1 w-full p-10 mx-auto my-8 md:flex-row md:space-x-6"
+        class="container relative flex flex-col items-center justify-between flex-1 w-full mx-auto my-8 md:p-10"
       >
-        <div class="w-full mb-12 md:w-1/2">
-          <h1 class="text-xl font-bold uppercase">julieta mercerat</h1>
-          <p class="mt-10 text-lg">
-            I am a passionate designer. Engaged to this incredible world of
-            creation.
-          </p>
-          <p class="text-lg">
-            Denim designer, Worked as Jeanswear Product Manager at Santista,
-            during my time there we create more than 60 products / We designed
-            more than 8 collections / We organized more than 10 events. As a
-            professional, I am always looking for environmental responsibility.
-            I am convinced that design can have a direct impact on the
-            environmental footprint of the fashion industry.
-          </p>
+        <div class="w-full mx-auto mb-12">
+          <nuxt-img
+            src="/img/proyectos/diauno/1.jpg"
+            sizes="sm:95vw md:100vw lg:100vw"
+            class="mx-auto shadow-lg shadow-sky-800/60"
+          />
         </div>
-        <div class="w-full md:w-1/2">
-          <iframe
-            class="w-full aspect-video"
-            src="https://player.vimeo.com/video/502370696"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
+        <div class="w-full mb-12">
+          <h2 class="my-4 font-semibold">Name of the project</h2>
+          <p class="mb-4">
+            Descipción de trabajo, explicacion y areas en las que se desarrollo.
+            Art directing, designing and developing an artist’s showcase
+            website. In progress, currently desktop only. Incorporates Lottie,
+            scroll, and mouse over interactions. Si es posible, poner el link
+            del trabajo real.
+          </p>
+          <div class="flex flex-col justify-between md:flex-row">
+            <div class="font-semibold">Programs</div>
+            <div class="font-semibold">I took part in</div>
+            <div class="font-semibold">Categorie</div>
+          </div>
+        </div>
+        <div class="w-full space-y-12">
+          <nuxt-img
+            v-for="(image, index) in images"
+            :key="index"
+            :alt="image.name"
+            :src="image.href"
+            sizes="sm:95vw md:100vw lg:100vw"
+            class="mx-auto shadow-lg shadow-sky-800/60"
+          />
         </div>
       </div>
     </div>
@@ -37,5 +45,69 @@
 <script>
 import NavigationComponent from '~/components/NavigationComponent.vue'
 import FooterComponent from '~/components/FooterComponent.vue'
-export default { components: { FooterComponent, NavigationComponent } }
+export default {
+  components: { FooterComponent, NavigationComponent },
+  data() {
+    return {
+      images: [
+        {
+          id: 1,
+          name: 'uno',
+          href: '/img/proyectos/diauno/1.jpg',
+        },
+        {
+          id: 2,
+          name: 'dos',
+          href: '/img/proyectos/diauno/2.jpg',
+        },
+        {
+          id: 3,
+          name: 'tres',
+          href: '/img/proyectos/diauno/3.jpg',
+        },
+        {
+          id: 4,
+          name: 'cuatro',
+          href: '/img/proyectos/diauno/4.jpg',
+        },
+        {
+          id: 5,
+          name: 'cinco',
+          href: '/img/proyectos/diauno/5.jpg',
+        },
+        {
+          id: 6,
+          name: 'seis',
+          href: '/img/proyectos/diauno/6.jpg',
+        },
+        {
+          id: 7,
+          name: 'siete',
+          href: '/img/proyectos/diauno/7.jpg',
+        },
+        {
+          id: 8,
+          name: 'ocho',
+          href: '/img/proyectos/diauno/8.jpg',
+        },
+        {
+          id: 9,
+          name: 'nueve',
+          href: '/img/proyectos/diauno/9.jpg',
+        },
+        {
+          id: 10,
+          name: 'dies',
+          href: '/img/proyectos/diauno/10.jpg',
+        },
+        {
+          id: 11,
+          name: 'once',
+          href: '/img/proyectos/diauno/11.jpg',
+        },
+      ],
+      index: null,
+    }
+  },
+}
 </script>

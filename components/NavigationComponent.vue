@@ -11,10 +11,7 @@
       >
 
       <!-- mobile menu button -->
-      <button
-        class="p-4 mobile-menu-button focus:bg-gray-200 focus:outline-none"
-        @click="toggle"
-      >
+      <button class="p-4 focus:bg-gray-200 focus:outline-none" @click="toggle">
         <svg
           class="w-5 h-5"
           fill="none"
@@ -75,7 +72,7 @@
 
       <div class="pt-16">
         <h3 class="px-4 my-3 font-semibold">Categories</h3>
-        <ul class="space-y-2 px-4 py-2.5">
+        <ul class="space-y-1 px-4 py-2.5">
           <li class="">#Fashion Design</li>
           <li>#Textile Design</li>
           <li>#Sustainability</li>

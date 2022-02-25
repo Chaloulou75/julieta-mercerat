@@ -4,11 +4,9 @@
       class="flex items-center justify-between px-4 py-2 text-gray-900 bg-white md:hidden"
     >
       <!-- logo -->
-      <NuxtLink
-        to="/"
-        class="px-4 py-2 text-white uppercase bg-gray-300 rounded-2xl"
-        >logo</NuxtLink
-      >
+      <NuxtLink to="/">
+        <LogoPersona class="h-10 px-4" :class="isOpen ? 'hidden' : ''" />
+      </NuxtLink>
 
       <!-- mobile menu button -->
       <button class="p-4 focus:bg-gray-200 focus:outline-none" @click="toggle">
@@ -34,11 +32,9 @@
       :class="isOpen ? '' : '-translate-x-full'"
     >
       <!-- logo -->
-      <NuxtLink
-        to="/"
-        class="mx-2 rounded-2xl bg-gray-300 px-4 py-2.5 uppercase text-white"
-        >logo</NuxtLink
-      >
+      <NuxtLink to="/">
+        <LogoPersona class="h-10 px-4" />
+      </NuxtLink>
 
       <!-- nav -->
       <nav>

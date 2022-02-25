@@ -3,7 +3,7 @@
     <div class="relative min-h-full bg-white font-montserrat md:flex">
       <NavigationComponent />
       <div
-        class="container relative flex flex-col items-center justify-between flex-1 w-full p-10 mx-auto my-8 md:flex-row md:space-x-6"
+        class="container relative flex flex-col items-center justify-between flex-1 w-full px-2 mx-auto my-8 md:flex-row md:space-x-6 md:p-10"
       >
         <div class="w-full mb-12 md:w-1/2">
           <h1 class="text-xl font-bold uppercase">julieta mercerat</h1>

@@ -5,7 +5,7 @@
       class="container relative grid flex-1 w-full min-h-screen grid-cols-1 gap-1 p-10 mx-auto my-8 text-white md:grid-cols-2 lg:my-20 lg:grid-cols-3 lg:gap-2"
     >
       <NuxtLink
-        to="/portfolio/dia-uno"
+        :to="localePath('/portfolio/jour-un')"
         class="relative transition duration-300 ease-in-out bg-center bg-cover dias-moove bg-dia-1 from-black to-gray-800 hover:rotate-3 hover:bg-gradient-to-br lg:hover:rotate-6"
       >
         <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
@@ -24,7 +24,7 @@
       </NuxtLink>
 
       <NuxtLink
-        to="/portfolio/dia-dos"
+        :to="localePath('/portfolio/jour-deux')"
         class="relative transition duration-300 ease-in-out transform bg-center bg-cover dias-moove bg-dia-2 from-red-600 to-redjuli hover:rotate-3 hover:bg-gradient-to-br lg:hover:rotate-6"
       >
         <div class="absolute inset-0 bg-red-600 bg-opacity-25"></div>
@@ -43,7 +43,7 @@
       </NuxtLink>
 
       <NuxtLink
-        to="/portfolio/dia-tres"
+        :to="localePath('/portfolio/jour-trois')"
         class="relative transition duration-300 ease-in-out transform bg-center bg-cover dias-moove bg-dia-3 from-blue-500 to-bluejuli hover:rotate-3 hover:bg-gradient-to-br lg:hover:rotate-6"
       >
         <div class="absolute inset-0 bg-blue-900 bg-opacity-25"></div>
@@ -62,7 +62,7 @@
       </NuxtLink>
 
       <NuxtLink
-        to="/portfolio/dia-cuatro"
+        :to="localePath('/portfolio/jour-quatre')"
         class="relative transition duration-300 ease-in-out transform bg-center bg-cover dias-moove bg-dia-4 from-yellow-500 to-yellowjuli hover:rotate-3 hover:bg-gradient-to-br lg:hover:rotate-6"
       >
         <div class="absolute inset-0 bg-opacity-25 bg-yellowjuli"></div>
@@ -81,7 +81,7 @@
       </NuxtLink>
 
       <NuxtLink
-        to="/portfolio/dia-cinco"
+        :to="localePath('/portfolio/jour-cinq')"
         class="relative transition duration-300 ease-in-out transform bg-center bg-cover dias-moove bg-dia-5 from-gray-900 to-black hover:rotate-3 hover:bg-gradient-to-br lg:hover:rotate-6"
       >
         <div class="absolute inset-0 bg-gray-800 bg-opacity-25"></div>
@@ -100,7 +100,7 @@
       </NuxtLink>
 
       <NuxtLink
-        to="/portfolio/dia-seis"
+        :to="localePath('/portfolio/jour-six')"
         class="relative transition duration-300 ease-in-out transform bg-center bg-cover dias-moove bg-dia-6 from-blue-500 to-bluejuli hover:rotate-3 hover:bg-gradient-to-br lg:hover:rotate-6"
       >
         <div class="absolute inset-0 bg-blue-800 bg-opacity-25"></div>
@@ -123,5 +123,7 @@
 
 <script>
 import NavigationComponent from '~/components/NavigationComponent.vue'
-export default { components: { NavigationComponent } }
+export default {
+  components: { NavigationComponent },
+}
 </script>

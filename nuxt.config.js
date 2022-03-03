@@ -34,6 +34,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/i18n',
   ],
 
   googleFonts: {
@@ -48,6 +49,59 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
+    },
+  },
+
+  plugins: ['~/plugins/router'],
+
+  i18n: {
+    // baseUrl: 'https://objective-spence-c10cd6.netlify.app/',
+    skipSettingLocaleOnNavigate: true,
+    defaultLocale: 'fr',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en-US.js',
+      },
+      {
+        code: 'fr',
+        iso: 'fr-FR',
+        file: 'fr-FR.js',
+      },
+    ],
+    lazy: true,
+    langDir: 'lang/',
+    parsePages: false,
+    pages: {
+      about: {
+        en: '/about',
+        fr: '/a-propos',
+      },
+      'portfolio/jour-un/index': {
+        en: '/portfolio/day-one',
+        fr: '/portfolio/jour-un',
+      },
+      'portfolio/jour-deux/index': {
+        en: '/portfolio/day-two',
+        fr: '/portfolio/jour-deux',
+      },
+      'portfolio/jour-trois/index': {
+        en: '/portfolio/day-three',
+        fr: '/portfolio/jour-trois',
+      },
+      'portfolio/jour-quatre/index': {
+        en: '/portfolio/day-four',
+        fr: '/portfolio/jour-quatre',
+      },
+      'portfolio/jour-cinq/index': {
+        en: '/portfolio/day-five',
+        fr: '/portfolio/jour-cinq',
+      },
+      'portfolio/jour-six/index': {
+        en: '/portfolio/day-six',
+        fr: '/portfolio/jour-six',
+      },
     },
   },
 

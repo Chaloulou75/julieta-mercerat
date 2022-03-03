@@ -37,5 +37,7 @@
 <script>
 import NavigationComponent from '~/components/NavigationComponent.vue'
 import FooterComponent from '~/components/FooterComponent.vue'
-export default { components: { FooterComponent, NavigationComponent } }
+export default {
+  components: { FooterComponent, NavigationComponent },
+}
 </script>

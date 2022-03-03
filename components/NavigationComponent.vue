@@ -4,7 +4,7 @@
       class="flex items-center justify-between px-4 py-2 text-gray-900 bg-white md:hidden"
     >
       <!-- logo -->
-      <NuxtLink to="/">
+      <NuxtLink :to="localePath('/')">
         <LogoPersona class="h-10 px-4" :class="isOpen ? 'hidden' : ''" />
       </NuxtLink>
 
@@ -32,24 +32,35 @@
       :class="isOpen ? '' : '-translate-x-full'"
     >
       <!-- logo -->
-      <NuxtLink to="/">
+      <NuxtLink :to="localePath('/')">
+        <span class="sr-only">Home</span>
         <LogoPersona class="h-10 px-4" />
       </NuxtLink>
 
       <!-- nav -->
       <nav>
         <NuxtLink
-          to="/"
+          :to="localePath('/')"
           class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
         >
           Portfolio
         </NuxtLink>
         <NuxtLink
-          to="/about"
+          :to="localePath('/about')"
           class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
         >
           About Me
         </NuxtLink>
+        <NuxtLink
+          :to="switchLocalePath('en')"
+          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
+          >English</NuxtLink
+        >
+        <NuxtLink
+          :to="switchLocalePath('fr')"
+          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
+          >Français</NuxtLink
+        >
         <a
           href="/CV_Julieta_Mercerat_FR.pdf"
           target="_blank"

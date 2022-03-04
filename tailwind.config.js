@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ['Montserrat', 'font-sans'],
+        ubuntu: ['Ubuntu', 'font-sans'],
       },
       backgroundImage: (theme) => ({
         'dia-1': "url('/img/proyectos/dias/dia1.jpg')",

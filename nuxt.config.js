@@ -42,6 +42,7 @@ export default {
     preload: true,
     families: {
       Montserrat: true,
+      Ubuntu: true,
     },
     display: 'swap',
   },

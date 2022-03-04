@@ -5,7 +5,7 @@
       <div
         class="container relative flex flex-col items-center justify-between flex-1 w-full px-2 mx-auto my-8 md:flex-row md:space-x-6 md:p-10"
       >
-        <div class="w-full mb-12 text-justify md:w-1/2">
+        <div class="w-full px-2 mx-auto mb-12 text-justify md:w-1/2">
           <h1 class="text-xl font-bold uppercase indent-4">julieta mercerat</h1>
           <div class="mt-10 space-y-4">
             <p class="text-base indent-4">

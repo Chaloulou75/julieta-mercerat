@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'julieta-mercerat',
+    title: 'Julieta Mercerat',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,6 +34,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'nuxt-protected-mailto',
     '@nuxtjs/i18n',
   ],
 
@@ -57,17 +58,17 @@ export default {
   i18n: {
     // baseUrl: 'https://objective-spence-c10cd6.netlify.app/',
     skipSettingLocaleOnNavigate: true,
-    defaultLocale: 'fr',
+    defaultLocale: 'en',
     locales: [
-      {
-        code: 'en',
-        iso: 'en-US',
-        file: 'en-US.js',
-      },
       {
         code: 'fr',
         iso: 'fr-FR',
         file: 'fr-FR.js',
+      },
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en-US.js',
       },
     ],
     lazy: true,
@@ -78,27 +79,27 @@ export default {
         en: '/about',
         fr: '/a-propos',
       },
-      'portfolio/jour-un/index': {
+      'portfolio/day-one/index': {
         en: '/portfolio/day-one',
         fr: '/portfolio/jour-un',
       },
-      'portfolio/jour-deux/index': {
+      'portfolio/day-two/index': {
         en: '/portfolio/day-two',
         fr: '/portfolio/jour-deux',
       },
-      'portfolio/jour-trois/index': {
+      'portfolio/day-three/index': {
         en: '/portfolio/day-three',
         fr: '/portfolio/jour-trois',
       },
-      'portfolio/jour-quatre/index': {
+      'portfolio/day-four/index': {
         en: '/portfolio/day-four',
         fr: '/portfolio/jour-quatre',
       },
-      'portfolio/jour-cinq/index': {
+      'portfolio/day-five/index': {
         en: '/portfolio/day-five',
         fr: '/portfolio/jour-cinq',
       },
-      'portfolio/jour-six/index': {
+      'portfolio/day-six/index': {
         en: '/portfolio/day-six',
         fr: '/portfolio/jour-six',
       },

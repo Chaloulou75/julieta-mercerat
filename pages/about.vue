@@ -5,20 +5,37 @@
       <div
         class="container relative flex flex-col items-center justify-between flex-1 w-full px-2 mx-auto my-8 md:flex-row md:space-x-6 md:p-10"
       >
-        <div class="w-full mb-12 md:w-1/2">
-          <h1 class="text-xl font-bold uppercase">julieta mercerat</h1>
-          <p class="mt-10 text-lg">
-            I am a passionate designer. Engaged to this incredible world of
-            creation.
-          </p>
-          <p class="text-lg">
-            Denim designer, Worked as Jeanswear Product Manager at Santista,
-            during my time there we create more than 60 products / We designed
-            more than 8 collections / We organized more than 10 events. As a
-            professional, I am always looking for environmental responsibility.
-            I am convinced that design can have a direct impact on the
-            environmental footprint of the fashion industry.
-          </p>
+        <div class="w-full mb-12 text-justify md:w-1/2">
+          <h1 class="text-xl font-bold uppercase indent-4">julieta mercerat</h1>
+          <div class="mt-10 space-y-4">
+            <p class="text-base indent-4">
+              {{ $t('aboutone') }}
+            </p>
+            <p class="text-base indent-4">
+              {{ $t('abouttwo') }}
+            </p>
+            <p class="text-base indent-4">
+              {{ $t('aboutthree') }}
+            </p>
+            <p class="text-base indent-4">
+              {{ $t('aboutfour') }}
+            </p>
+          </div>
+
+          <div class="mt-4 space-y-2">
+            <p class="text-base indent-4">
+              <span class="font-semibold">=></span> {{ $t('aboutfive') }}
+            </p>
+            <p class="text-base indent-4">
+              <span class="font-semibold">=></span> {{ $t('aboutsix') }}
+            </p>
+            <p class="text-base indent-4">
+              <span class="font-semibold">=></span> {{ $t('aboutseven') }}
+            </p>
+            <p class="text-base indent-4">
+              <span class="font-semibold">=></span> {{ $t('aboutheight') }}
+            </p>
+          </div>
         </div>
         <div class="w-full md:w-1/2">
           <iframe

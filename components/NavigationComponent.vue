@@ -49,26 +49,31 @@
           :to="localePath('/about')"
           class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
         >
-          About Me
+          {{ $t('about') }}
         </NuxtLink>
-        <NuxtLink
-          :to="switchLocalePath('en')"
-          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
-          >English</NuxtLink
-        >
-        <NuxtLink
-          :to="switchLocalePath('fr')"
-          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
-          >Français</NuxtLink
-        >
+        <div class="flex divide-x-2">
+          <NuxtLink
+            :to="switchLocalePath('en')"
+            class="mr-0.5 block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
+            >En</NuxtLink
+          >
+          <NuxtLink
+            :to="switchLocalePath('fr')"
+            class="ml-0.5 block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
+            >Fr</NuxtLink
+          >
+        </div>
+
         <a
+          v-if="$i18n.locale === 'fr'"
           href="/CV_Julieta_Mercerat_FR.pdf"
           target="_blank"
           class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
         >
-          CV FR
+          CV
         </a>
         <a
+          v-else
           href="/CV_Julieta_Mercerat_ESP.pdf"
           target="_blank"
           class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
@@ -85,6 +90,27 @@
           <li>#Sustainability</li>
           <li>#Trend Reports</li>
         </ul>
+      </div>
+      <div class="px-4 pt-10">
+        <Mailto
+          mail="julietamercerat@gmail.com"
+          target="_blank"
+          class="hover:text-gray-600"
+        >
+          <svg
+            class="w-6 h-6 xl:h-10 xl:w-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            />
+          </svg>
+        </Mailto>
       </div>
     </div>
   </div>

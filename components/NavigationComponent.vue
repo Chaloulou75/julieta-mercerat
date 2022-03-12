@@ -5,7 +5,10 @@
     >
       <!-- logo -->
       <NuxtLink :to="localePath('/')">
-        <LogoPersona class="h-10 px-4" :class="isOpen ? 'hidden' : ''" />
+        <LogoPersona
+          class="h-10 px-4 focus:outline-none"
+          :class="isOpen ? 'hidden' : ''"
+        />
       </NuxtLink>
 
       <!-- mobile menu button -->
@@ -34,32 +37,32 @@
       <!-- logo -->
       <NuxtLink :to="localePath('/')">
         <span class="sr-only">Home</span>
-        <LogoPersona class="h-10 px-4" />
+        <LogoPersona class="h-10 px-4 focus:outline-none" />
       </NuxtLink>
 
       <!-- nav -->
       <nav>
         <NuxtLink
           :to="localePath('/')"
-          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
+          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white focus:outline-none"
         >
           Portfolio
         </NuxtLink>
         <NuxtLink
           :to="localePath('/about')"
-          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
+          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white focus:outline-none"
         >
           {{ $t('about') }}
         </NuxtLink>
         <div class="flex divide-x-2">
           <NuxtLink
             :to="switchLocalePath('en')"
-            class="mr-0.5 block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
+            class="mr-0.5 block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white focus:outline-none"
             >En</NuxtLink
           >
           <NuxtLink
             :to="switchLocalePath('fr')"
-            class="ml-0.5 block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
+            class="ml-0.5 block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white focus:outline-none"
             >Fr</NuxtLink
           >
         </div>
@@ -68,7 +71,7 @@
           v-if="$i18n.locale === 'fr'"
           href="/CV_Julieta_Mercerat_FR.pdf"
           target="_blank"
-          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
+          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white focus:outline-none"
         >
           CV
         </a>
@@ -76,7 +79,7 @@
           v-else
           href="/CV_Julieta_Mercerat_ESP.pdf"
           target="_blank"
-          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white"
+          class="block rounded py-2.5 px-4 uppercase transition duration-200 hover:bg-blue-700 hover:text-white focus:outline-none"
         >
           CV ES
         </a>
@@ -85,10 +88,10 @@
       <div class="pt-16">
         <h3 class="px-4 my-3 font-semibold">Categories</h3>
         <ul class="space-y-1 px-4 py-2.5">
-          <li class="">#Fashion Design</li>
-          <li>#Textile Design</li>
-          <li>#Sustainability</li>
-          <li>#Trend Reports</li>
+          <li value="#Fashion Design">#Fashion Design</li>
+          <li value="#Textile Design">#Textile Design</li>
+          <li value="#Sustainability">#Sustainability</li>
+          <li value="#Trend Reports">#Trend Reports</li>
         </ul>
       </div>
       <div class="px-4 pt-10">
